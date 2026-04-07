@@ -1,0 +1,43 @@
+.bg-primary {
+    background-color: #8f4e00;
+}
+
+.bg-secondary {
+    background-color: #735c00;
+}
+
+.bg-tertiary {
+    background-color: #934b19;
+}
+
+/* Responsive typography */
+.h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+}
+
+.h2 {
+    @apply text-3xl md:text-4xl;
+}
+
+.p {
+    @apply text-base md:text-lg;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+    .responsive-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+/* Add more utility classes as needed */
